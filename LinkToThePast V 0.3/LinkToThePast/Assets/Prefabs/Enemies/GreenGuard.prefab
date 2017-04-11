@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1371560549296726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -100, y: -7, z: 0}
+  m_LocalPosition: {x: -0.47449923, y: 239.33891, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,15 +84,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1371560549296726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49a969df447481c498d08c98cf782b4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 02d0ce78210787d40aa56a93e5fdb02d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 2
+  velocity: {x: 0, y: 0}
+  knockBackDirection: {x: 0, y: 0}
+  controller: {fileID: 0}
+  moveSpeed: 95
+  hurtTimer: 0
   deathPrefab: {fileID: 1028667541993800, guid: de9cd3fefb0966f4f9ef00633be492f9,
     type: 2}
-  controller: {fileID: 0}
-  velocity: {x: 0, y: 0}
-  enemyScript: {fileID: 0}
+  currentOrientation: 0
+  isOrientedDown: 0
+  isOrientedLeft: 0
+  isOrientedRight: 0
+  isOrientedUp: 0
+  anim: {fileID: 0}
+  renderer: {fileID: 0}
+  isAttacking: 0
+  isBufferingCharge: 0
 --- !u!212 &212261557505951882
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -81,6 +81,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AttackState.cs" />
     <Compile Include="Assets\Scripts\BaseOrientedState.cs" />
     <Compile Include="Assets\Scripts\BaseState.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
@@ -92,7 +93,10 @@
     <Compile Include="Assets\Scripts\Collectibles\RupeeCollectible.cs" />
     <Compile Include="Assets\Scripts\Collision Stuff\Controller2D.cs" />
     <Compile Include="Assets\Scripts\Collision Stuff\RaycastController.cs" />
+    <Compile Include="Assets\Scripts\DefaultGuardState.cs" />
     <Compile Include="Assets\Scripts\DefaultState.cs" />
+    <Compile Include="Assets\Scripts\Enemies\GreenGuard.cs" />
+    <Compile Include="Assets\Scripts\EnemyBaseState.cs" />
     <Compile Include="Assets\Scripts\Framework.cs" />
     <Compile Include="Assets\Scripts\Link.cs" />
     <Compile Include="Assets\Scripts\LinkStats.cs" />
