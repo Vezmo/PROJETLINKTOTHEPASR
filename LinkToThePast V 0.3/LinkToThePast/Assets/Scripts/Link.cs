@@ -13,6 +13,7 @@ public class Link : Framework
   public Controller2D controller;
   public int baseSpeed = 95;
   public int moveSpeed = 95;
+  public CameraFollow cameraFollow;
 
 
     //à mettre ptet dans inventory
@@ -43,6 +44,8 @@ public class Link : Framework
     renderer = GetComponent<SpriteRenderer>();
     controller = GetComponent<Controller2D>();
     state = new DefaultState();
+    cameraFollow = GameObject.FindGameObjectWithTag("Camera").GetComponent<CameraFollow>();
+
   }
 
   protected override void OnUpdate()
@@ -88,6 +91,41 @@ public class Link : Framework
         transform.position.z);
     }
   }
+  void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.tag == "Salle1")
+        {
+            cameraFollow.Salle1();
+        }
+        else if (col.tag == "Salle2")
+        {
+            cameraFollow.Salle2();
+        }
+        else if (col.tag == "Salle3")
+        {
+            cameraFollow.Salle3();
+        }
+        else if (col.tag == "Salle4")
+        {
+            cameraFollow.Salle4();
+        }
+        else if (col.tag == "Salle5")
+        {
+            cameraFollow.Salle5();
+        }
+        //else if (col.tag == "Salle6")
+        //{
+        //    cameraFollow.Salle6();
+        //}
+        else if (col.tag == "salle7")
+        {
+            cameraFollow.Salle7();
+        }
+        //else if (col.tag == "Salle8")
+        //{
+        //    cameraFollow.Salle8();
+        //}
+    }
     void AnimatorStuff()
   {
 
