@@ -21,7 +21,8 @@ public class DefaultState : BaseOrientedState
 
     if (Input.GetButtonDown("Attack"))
     {
-      
+
+      return new AttackState();
     }
 
     if (Input.GetButtonDown("Charge"))
