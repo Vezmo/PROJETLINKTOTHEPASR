@@ -7,7 +7,8 @@ public class DefaultState : BaseOrientedState
 {
 
 
-  public DefaultState() {}
+    public DefaultState()
+    {}
 
 
   public override BaseState Update(Link link, Orientation currentOrientation)
@@ -15,7 +16,7 @@ public class DefaultState : BaseOrientedState
     base.Update(link, currentOrientation);
 
     Vector2 directionalInput = link.directionalInput;
-
+    link.moveSpeed = link.baseSpeed;
     link.velocity = directionalInput * link.moveSpeed;
     link.controller.Move(link.velocity * Time.deltaTime);
 
@@ -27,7 +28,7 @@ public class DefaultState : BaseOrientedState
 
     if (Input.GetButtonDown("Charge"))
     {
-      
+            return new BufferingChargeState();
     }
     //if (Input.GetButtonDown("UseItem"))
     //{
@@ -36,7 +37,4 @@ public class DefaultState : BaseOrientedState
 
     return this;
   }
-
-
-
 }
