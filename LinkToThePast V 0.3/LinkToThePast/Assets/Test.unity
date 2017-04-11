@@ -560,6 +560,12 @@ Prefab:
       propertyPath: items.Array.data[0]
       value: 
       objectReference: {fileID: 622806255}
+    - target: {fileID: 114052508797483920, guid: 76483e83b9daa2a41aeea682102cbabf,
+        type: 2}
+      propertyPath: SmokePrefab
+      value: 
+      objectReference: {fileID: 1821030652782948, guid: e54a692862b437b4e8d127ea79f17a30,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76483e83b9daa2a41aeea682102cbabf, type: 2}
   m_IsPrefabParent: 0

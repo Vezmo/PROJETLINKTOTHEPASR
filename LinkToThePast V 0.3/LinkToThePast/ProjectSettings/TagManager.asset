@@ -43,6 +43,9 @@ TagManager:
   - name: Scenery
     uniqueID: 737035993
     locked: 0
+  - name: BufferingSmoke
+    uniqueID: 1824507093
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

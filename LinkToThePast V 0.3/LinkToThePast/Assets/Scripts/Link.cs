@@ -11,16 +11,18 @@ public class Link : Framework
 
   public Vector2 directionalInput;
   public Controller2D controller;
+  public int baseSpeed = 95;
   public int moveSpeed = 95;
 
-  //à mettre ptet dans inventory
-  public int currentItemIndex;
+
+    //à mettre ptet dans inventory
+    public int currentItemIndex;
 
 
   public Orientation currentOrientation;
   private Orientation startingOrientation = Orientation.Down;
+  public Orientation oldOrientation;
   public bool isOrientedDown;
-  public bool isOrientedLeft;
   public bool isOrientedRight;
   public bool isOrientedUp;
   public BaseState state;
@@ -30,16 +32,17 @@ public class Link : Framework
   public float attackDuration;
   public bool isAttacking = false;
   public bool isBufferingCharge = false;
+  public bool isCharging = false;
+  public GameObject SmokePrefab;
 
   protected override void OnStart()
   {
     currentOrientation = Orientation.Down;
+    oldOrientation = currentOrientation;
     anim = GetComponent<Animator>();
     renderer = GetComponent<SpriteRenderer>();
     controller = GetComponent<Controller2D>();
     state = new DefaultState();
-
-
   }
 
   protected override void OnUpdate()
@@ -52,9 +55,11 @@ public class Link : Framework
      
     AnimatorStuff();
 
-  }
+    oldOrientation = currentOrientation; // refresh the oldOrientation before changing frame
 
-  private void LateUpdate()
+    }
+
+    private void LateUpdate()
   {
     if (controller.collisions.above)
     {
@@ -83,13 +88,7 @@ public class Link : Framework
         transform.position.z);
     }
   }
-
-
-
-
-
-
-  void AnimatorStuff()
+    void AnimatorStuff()
   {
 
     //For Animator purposes only
@@ -103,7 +102,6 @@ public class Link : Framework
 
     anim.SetBool("isAttacking", isAttacking);
     anim.SetBool("isOrientedDown", isOrientedDown);
-    anim.SetBool("isOrientedLeft", isOrientedLeft);
     anim.SetBool("isOrientedRight", isOrientedRight);
     anim.SetBool("isOrientedUp", isOrientedUp);
     anim.SetBool("isBufferingCharge", isBufferingCharge);

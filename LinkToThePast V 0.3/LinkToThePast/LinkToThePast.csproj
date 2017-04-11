@@ -52,9 +52,6 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -70,9 +67,6 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
     </Reference>
@@ -83,7 +77,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BaseOrientedState.cs" />
     <Compile Include="Assets\Scripts\BaseState.cs" />
+    <Compile Include="Assets\Scripts\BufferingChargeState.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\ChargingState.cs" />
     <Compile Include="Assets\Scripts\Collectibles\ArrowPacksCollectible.cs" />
     <Compile Include="Assets\Scripts\Collectibles\BaseCollectible.cs" />
     <Compile Include="Assets\Scripts\Collectibles\BombPacksCollectible.cs" />
@@ -93,6 +89,7 @@
     <Compile Include="Assets\Scripts\Collision Stuff\Controller2D.cs" />
     <Compile Include="Assets\Scripts\Collision Stuff\RaycastController.cs" />
     <Compile Include="Assets\Scripts\DefaultState.cs" />
+    <Compile Include="Assets\Scripts\Effects\Smoke.cs" />
     <Compile Include="Assets\Scripts\Framework.cs" />
     <Compile Include="Assets\Scripts\Link.cs" />
     <Compile Include="Assets\Scripts\LinkStats.cs" />
