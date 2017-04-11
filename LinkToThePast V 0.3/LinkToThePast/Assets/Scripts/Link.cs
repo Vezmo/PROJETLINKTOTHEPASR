@@ -14,13 +14,11 @@ public class Link : Framework
   public int moveSpeed = 95;
 
   //à mettre ptet dans inventory
-  public BaseItem[] items;
   public int currentItemIndex;
 
 
   public Orientation currentOrientation;
   private Orientation startingOrientation = Orientation.Down;
-  public GameObject smokePrefab;
   public bool isOrientedDown;
   public bool isOrientedLeft;
   public bool isOrientedRight;
@@ -86,21 +84,11 @@ public class Link : Framework
     }
   }
 
-  public void CreateSmokeTrail()
-  {
-    InvokeRepeating("InstantiateSmoke", 0, 0.2f);
-  }
 
-  public void InstantiateSmoke()
-  {
-    Instantiate(smokePrefab, new Vector2(transform.position.x, transform.position.y - 10), Quaternion.identity);
-    print("Shtrougen");
-  }
 
-  public void StopInvoke()
-  {
-    CancelInvoke("InstantiateSmoke");
-  }
+
+
+
   void AnimatorStuff()
   {
 

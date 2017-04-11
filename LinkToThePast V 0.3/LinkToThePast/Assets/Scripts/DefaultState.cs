@@ -21,12 +21,12 @@ public class DefaultState : BaseOrientedState
 
     if (Input.GetButtonDown("Attack"))
     {
-      return new AttackState();
+      
     }
 
     if (Input.GetButtonDown("Charge"))
     {
-      return new BufferChargeState(link);
+      
     }
     //if (Input.GetButtonDown("UseItem"))
     //{

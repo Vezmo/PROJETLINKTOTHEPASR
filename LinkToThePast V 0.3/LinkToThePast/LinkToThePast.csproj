@@ -52,9 +52,6 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -70,9 +67,6 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
     </Reference>
@@ -81,15 +75,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AttackState.cs" />
-    <Compile Include="Assets\Scripts\BaseItem.cs" />
     <Compile Include="Assets\Scripts\BaseOrientedState.cs" />
     <Compile Include="Assets\Scripts\BaseState.cs" />
-    <Compile Include="Assets\Scripts\Boomerang.cs" />
-    <Compile Include="Assets\Scripts\BoomerangBehaviour.cs" />
-    <Compile Include="Assets\Scripts\BufferChargeState.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\ChargeState.cs" />
     <Compile Include="Assets\Scripts\Collectibles\ArrowPacksCollectible.cs" />
     <Compile Include="Assets\Scripts\Collectibles\BaseCollectible.cs" />
     <Compile Include="Assets\Scripts\Collectibles\BombPacksCollectible.cs" />
@@ -98,17 +86,11 @@
     <Compile Include="Assets\Scripts\Collectibles\RupeeCollectible.cs" />
     <Compile Include="Assets\Scripts\Collision Stuff\Controller2D.cs" />
     <Compile Include="Assets\Scripts\Collision Stuff\RaycastController.cs" />
-    <Compile Include="Assets\Scripts\DeathPrefab.cs" />
     <Compile Include="Assets\Scripts\DefaultState.cs" />
-    <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Enemies\GreenGuard.cs" />
     <Compile Include="Assets\Scripts\Framework.cs" />
-    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Link.cs" />
-    <Compile Include="Assets\Scripts\LinkAttackHitbox.cs" />
     <Compile Include="Assets\Scripts\LinkStats.cs" />
     <Compile Include="Assets\Scripts\Orientation.cs" />
-    <Compile Include="Assets\Scripts\SmokePrefab.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
