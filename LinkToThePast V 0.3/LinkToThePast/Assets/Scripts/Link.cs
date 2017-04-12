@@ -113,18 +113,18 @@ public class Link : Framework
         {
             cameraFollow.Salle5();
         }
-        //else if (col.tag == "Salle6")
-        //{
-        //    cameraFollow.Salle6();
-        //}
-        else if (col.tag == "salle7")
+        else if (col.tag == "Salle6")
+        {
+            cameraFollow.Salle6();
+        }
+        else if (col.tag == "Salle7")
         {
             cameraFollow.Salle7();
         }
-        //else if (col.tag == "Salle8")
-        //{
-        //    cameraFollow.Salle8();
-        //}
+        else if (col.tag == "Salle8")
+        {
+            cameraFollow.Salle8();
+        }
     }
     void AnimatorStuff()
   {

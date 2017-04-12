@@ -10,6 +10,7 @@ public class CameraFollow : MonoBehaviour {
     Vector3 salle2 = new Vector3(225, 268, -10);
     Vector3 salle4 = new Vector3(-30, 630, -10);
     Vector3 salle7 = new Vector3(368, 999, -10);
+    Vector3 salle8 = new Vector3(368, 1240, -10);
 
     // Use this for initialization
     void Start() {
@@ -48,9 +49,17 @@ public class CameraFollow : MonoBehaviour {
     {
         transform.position = new Vector3(target.position.x, 629, -10);
     }
+    public void Salle6()
+    {
+        transform.position = new Vector3(625, target.position.y, -10);
+    }
     public void Salle7()
     {
         transform.position = salle7;
+    }
+    public void Salle8()
+    {
+        transform.position = salle8;
     }
   void LateUpdate()
   {

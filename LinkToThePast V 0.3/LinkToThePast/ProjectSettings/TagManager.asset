@@ -7,6 +7,15 @@ TagManager:
   - linkAttack
   - Enemy
   - LinkAttack
+  - Salle1
+  - Salle2
+  - Salle3
+  - Salle4
+  - Salle5
+  - Salle6
+  - Salle7
+  - Salle8
+  - Camera
   layers:
   - Default
   - TransparentFX
